@@ -8,7 +8,7 @@ const Nav = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-600 ">
+      <nav className="sticky -mb-16 z-10   flex flex-wrap items-center justify-between px-2 py-3 bg-gray-600/70 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full align-middle items-center relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link

@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const NotFound = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
-    <section className="flex items-center h-screen p-16 dark:bg-gray-900 dark:text-gray-100">
+    <motion.section
+      variants={boxVariant}
+      initial="hidden"
+      ref={ref}
+      animate={control}
+      exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
+      className="flex items-center h-screen p-16 dark:bg-gray-900 dark:text-gray-100"
+    >
       <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
         <div className="max-w-md text-center">
           <h2 className="mb-8 font-extrabold text-9xl dark:text-gray-600">
@@ -24,7 +46,7 @@ const NotFound = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

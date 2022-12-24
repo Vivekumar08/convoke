@@ -10,5 +10,13 @@ export const navbarLinks = [
     {
         item: "Speakers",
         url:"/speakers"
+    },
+    {
+        item: "Sponsers",
+        url:"/sponsers"
+    },
+    {
+        item: "Venue",
+        url:"/venue"
     }
 ]
