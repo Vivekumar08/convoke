@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <div className='bg-transparent sticky'>Nav</div>
   )
 }
 

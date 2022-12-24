@@ -1,15 +1,27 @@
 // import logo from './logo.svg';
 import './App.css';
+import { HelmetProvider } from 'react-helmet-async'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import NotFound from './Pages/NotFound';
+import Home from './Pages/Home';
+import Nav from './Components/Nav';
+import Timeline from './Pages/Timeline';
+
 
 function App() {
+  const helmetContext = {}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          We will build Convoke'23 5.0 from here.
-        
-      </header>
-    </div>
+    <HelmetProvider context={helmetContext}>
+      <Router>
+        <Nav />
+        <Routes>
+          <Route element={<Home />} path="/" exact />
+          <Route element={<Timeline />} path="/timeline" exact />
+          <Route element={<NotFound />} path="*" />
+        </Routes >
+      </Router>
+    </HelmetProvider>
   );
 }
 
