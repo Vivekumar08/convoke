@@ -10,7 +10,7 @@ const Timeline = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col justify-center items-center mt-24  font-marcellus  text-[#e4e4e4] pt-10 "
+        className="flex flex-col justify-center items-center  lg:mt-24  font-marcellus  text-[#e4e4e4] pt-10 "
       >
         <p className="font-bold text-5xl">Timeline</p>
         <div className="w-full h-[95vh] mt-10">

@@ -23,10 +23,10 @@ const Home = () => {
             style={{ width: 300, height: 300 }}
             alt="convoke_5.0"
           />
-          <p className="font-marcellus font-extrabold text-[#e4e4e4] mt-5 text-8xl ">
+          <p className="font-marcellus text-6xl font-extrabold text-[#e4e4e4] mt-5 md:text-8xl ">
             Convoke 5.0
           </p>
-          <p className="font-Chivo font-semibold mt-5 text-4xl">
+          <p className="font-Chivo font-semibold mt-5 text-2xl md:text-4xl">
             28th - 29th January 2023
           </p>
         </div>
