@@ -7,3 +7,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
+.imag {
+  filter: drop-shadow(2px 6px 14px #fff);
+  transition: transform .3s ease-in-out;
+}
+
+.imag:hover {
+  transform: rotate(360deg);
+}
