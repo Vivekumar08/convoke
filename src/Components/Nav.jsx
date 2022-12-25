@@ -13,11 +13,19 @@ const Nav = () => {
           <div className="w-full align-middle items-center relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
               rel="noopener noreferrer"
-              className="text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="text-xl font-bold hidden leading-relaxed lg:inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
               href="http://cic.du.ac.in/"
               target="blank"
             >
               Cluster Innovation Centre
+            </a>
+            <a
+              rel="noopener noreferrer"
+              className="text-xl font-bold leading-relaxed inline-block lg:hidden  py-2 whitespace-nowrap uppercase text-white"
+              href="http://cic.du.ac.in/"
+              target="blank"
+            >
+              CIC
             </a>
             <IconContext.Provider value={{ color: "white" }}>
               {!navbarOpen ? (
