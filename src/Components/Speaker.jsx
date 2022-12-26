@@ -1,5 +1,4 @@
 import React from "react";
-import { IconContext } from "react-icons";
 import { motion } from "framer-motion";
 import { Speakers } from "../Content";
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
