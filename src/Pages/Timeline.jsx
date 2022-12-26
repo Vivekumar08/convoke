@@ -13,7 +13,8 @@ const Timeline = () => {
         className="flex flex-col justify-center items-center  lg:mt-24  font-marcellus  text-[#e4e4e4] pt-10 "
       >
         <p className="font-bold text-5xl">Timeline</p>
-        <div className="w-full h-[95vh] mt-10">
+        <p className="font-bold text-2xl mt-10">Starts on 28th January</p>
+        <div className="w-full h-[95vh] ">
           <Chrono
             mode="VERTICAL_ALTERNATING"
             cardHeight={"auto"}

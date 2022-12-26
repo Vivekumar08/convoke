@@ -9,15 +9,15 @@ export const navbarLinks = [
     },
     {
         item: "Speakers",
-        url: "/speakers"
+        url: "#Speakers"
     },
     {
         item: "Sponsers",
-        url: "/sponsers"
+        url: "sponsers"
     },
     {
         item: "Venue",
-        url: "/venue"
+        url: "venue"
     }
 ]
 
@@ -62,3 +62,34 @@ export const Timeline_cont = [
         title: "12 noon",
     },
 ]
+
+export const Speakers = [{
+    name: "Shreya Malviya",
+    pic: "https://source.unsplash.com/100x100/?portrait?0",
+    name_gb: "github",
+    link_gb: "#",
+    name_li: "LinkedIn",
+    link_li: "#",
+    name_gm: "Gmail",
+    link_gm: "#",
+},
+{
+    name: "Yash Lamba",
+    pic: "https://source.unsplash.com/100x100/?portrait?01",
+    name_gb: "github",
+    link_gb: "#",
+    name_li: "LinkedIn",
+    link_li: "#",
+    name_gm: "Gmail",
+    link_gm: "#",
+},
+{
+    name: "Sanket Aggarwal",
+    pic: "https://source.unsplash.com/100x100/?portrait?02",
+    name_gb: "github",
+    link_gb: "#",
+    name_li: "LinkedIn",
+    link_li: "#",
+    name_gm: "Gmail",
+    link_gm: "#",
+}]

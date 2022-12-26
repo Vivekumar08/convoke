@@ -10,10 +10,14 @@
 
 .imag {
   filter: drop-shadow(2px 6px 14px #fff);
-  transition: transform .3s ease-in-out;
+  transition: filter 1s ease, transform .5s ease-in-out;
 }
 
 .imag:hover {
   filter: drop-shadow(2px 6px 14px #50d5f3);
   transform: rotate(360deg);
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
 }
