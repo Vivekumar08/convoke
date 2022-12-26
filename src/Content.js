@@ -9,7 +9,7 @@ export const navbarLinks = [
     },
     {
         item: "Speakers",
-        url: "#Speakers"
+        url: "Speakers"
     },
     {
         item: "Sponsers",

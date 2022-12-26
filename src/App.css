@@ -21,3 +21,10 @@
 .scroll-container {
   scroll-behavior: smooth;
 }
+
+.changeColor {
+  color: black;
+}
+.changeColor:hover {
+  color: #008ee2;
+}
